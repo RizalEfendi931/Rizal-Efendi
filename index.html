@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizal Efendi - IT Specialist & Network Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #004e92; /* BNI/Tech Blue style */
+            --secondary: #000428;
+            --accent: #f9a825; /* Electrical/Warning Yellow accent */
+            --text: #333;
+            --bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* Header / Nav */
+        header { background: var(--white); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+        nav ul { display: flex; gap: 20px; }
+        nav a { font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(135deg, var(--secondary), var(--primary)); 
+            color: var(--white); 
+            padding: 100px 5%; 
+            text-align: center; 
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero h2 { font-size: 1.5rem; font-weight: 300; margin-bottom: 20px; color: #ddd; }
+        .hero p { max-width: 600px; margin: 0 auto 30px; }
+        .btn { 
+            display: inline-block; padding: 10px 25px; background: var(--accent); color: var(--secondary); 
+            font-weight: bold; border-radius: 5px; transition: 0.3s; 
+        }
+        .btn:hover { background: #fff; }
+
+        /* Sections Generic */
+        section { padding: 60px 5%; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; color: var(--primary); }
+
+        /* Experience (Timeline) */
+        .timeline { position: relative; max-width: 800px; margin: 0 auto; }
+        .job-card { 
+            background: var(--white); padding: 20px; margin-bottom: 20px; border-radius: 8px; 
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05); border-left: 5px solid var(--primary); 
+        }
+        .job-card h3 { color: var(--secondary); }
+        .job-card .company { color: var(--primary); font-weight: bold; font-size: 0.9rem; }
+        .job-card .date { color: #777; font-size: 0.85rem; margin-bottom: 10px; display: block; }
+        .job-card ul { margin-left: 20px; list-style: disc; margin-top: 10px; }
+
+        /* Skills (Grid) */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .skill-category { background: var(--white); padding: 20px; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.05); }
+        .skill-category h3 { color: var(--primary); margin-bottom: 15px; border-bottom: 2px solid var(--bg); padding-bottom: 5px; }
+        .tags span { 
+            display: inline-block; background: #e3f2fd; color: var(--primary); 
+            padding: 5px 10px; border-radius: 15px; font-size: 0.85rem; margin: 3px; 
+        }
+
+        /* Education & Contact */
+        .edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .edu-card { background: var(--white); padding: 20px; border-radius: 8px; text-align: center; }
+        
+        .contact-info { text-align: center; font-size: 1.2rem; }
+        .contact-info div { margin: 10px 0; }
+        .contact-info i { color: var(--primary); margin-right: 10px; }
+
+        footer { text-align: center; padding: 20px; background: var(--secondary); color: #fff; margin-top: 40px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav { display: none; } /* Simplified for mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">RIZAL EFENDI</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Rizal Efendi</h1>
+        <h2>IT Specialist | Network Engineer | Electrical Technician</h2>
+        <p>Results-oriented professional with 5+ years of experience in managing IT infrastructure, implementing networks, and ensuring system reliability.</p>
+        <a href="#contact" class="btn">Hire Me</a>
+        <a href="https://drive.google.com/file/d/1zSnOO6eOuKcmJdd2Q3800G--ksDhT8lz/view?usp=sharing" class="btn" style="background: transparent; border: 2px solid white; color: white;">Download CV</a>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Professional Summary</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p>I am an IT Specialist and Electrical Technician adept in hardware, software, and electrical systems troubleshooting. I have demonstrated success in managing IT infrastructure, virtualization, and cloud environments. I am passionate about contributing to dynamic industries—particularly energy and technology sectors—that demand technical precision, innovation, and reliability.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+            
+            <div class="job-card">
+                <h3>IT Technician</h3>
+                <span class="company">PT Bank Negara Indonesia (BNI) - Outsourced via Smangi3 | Lamongan</span>
+                <span class="date">Nov 2024 – Present</span>
+                <ul>
+                    <li>Replaced ATM units from Wincor to Hitachi and provided hardware support.</li>
+                    <li>Configured PBX using Juniper, managed VPN routing, and monitored via Grafana.</li>
+                    <li>Performed monthly IT asset reporting and preventive maintenance on servers.</li>
+                    <li>Conducted electrical system inspections and routine cleaning.</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <h3>Network Operations Center (NOC)</h3>
+                <span class="company">PT. DASEN | Surabaya</span>
+                <span class="date">Sept 2024 – Nov 2024</span>
+                <ul>
+                    <li>Supervised 3000KVA electrical installations (PLN to Server Racks).</li>
+                    <li>Operated redundant UPS systems ensuring SLA compliance.</li>
+                    <li>Monitored critical systems: FSS (gas safety), CCTV, and Access Control.</li>
+                    <li>Implemented EMS for AC monitoring and internal traffic monitoring via Grafana.</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <h3>IT Staff</h3>
+                <span class="company">PT Hotel Mahkota | Lamongan</span>
+                <span class="date">Mar 2024 – Aug 2024</span>
+                <ul>
+                    <li>Optimized network infrastructure (DHCP to PPPoE, Mikrotik load balancing).</li>
+                    <li>Analyzed business needs for POS and accounting software procurement.</li>
+                    <li>Supported event operations (Sound system, Internet, Electrical).</li>
+                    <li>Provided user training on Microsoft 365 and AI tools.</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <h3>IT Consultant / Owner</h3>
+                <span class="company">ZallTech Computer Service | Lamongan</span>
+                <span class="date">Mar 2020 – Aug 2024</span>
+                <ul>
+                    <li>Delivered technical consulting and repair for hardware/software.</li>
+                    <li>Built long-term relationships with clients through quality service.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" style="background-color: #eef2f5;">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-network-wired"></i> Infrastructure & Net</h3>
+                <div class="tags">
+                    <span>Routing</span><span>VLAN</span><span>Mikrotik</span><span>Fortigate</span><span>Cisco</span><span>IP Mgmt</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Server & Virtualization</h3>
+                <div class="tags">
+                    <span>Windows Server</span><span>Linux LXC</span><span>Proxmox</span><span>Docker</span><span>Kubernetes</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+                <div class="tags">
+                    <span>AWS</span><span>Azure</span><span>Alibaba Cloud</span><span>GCP</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-bolt"></i> Electrical Systems</h3>
+                <div class="tags">
+                    <span>Instrumentation</span><span>LV Panels</span><span>UPS (Galaxy VL)</span><span>HVAC & Chillers</span>
+                </div>
+            </div>
+             <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Software & Tools</h3>
+                <div class="tags">
+                    <span>AutoCAD</span><span>Jira</span><span>MS Project</span><span>Power BI</span><span>Grafana</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <h3>Bachelor of Information Systems</h3>
+                <p>Universitas Terbuka (2024 – 2028)</p>
+            </div>
+            <div class="edu-card">
+                <h3>Vocational High School</h3>
+                <p>SMKN 1 Lamongan - HVAC & Electrical (Graduated 2016)</p>
+            </div>
+            <div class="edu-card" style="grid-column: 1 / -1;">
+                <h3>Certifications</h3>
+                <p>CCNA | MTCNA | CCWE | CySA | IT Operation | ITIL Foundation</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-info">
+            <div><i class="fas fa-envelope"></i> zalltech.official@gmail.com</div>
+            <div><i class="fas fa-phone"></i> +62 857-0639-4168</div>
+            <div><i class="fab fa-linkedin"></i> linkedin.com/in/zalef</div>
+            <div><i class="fas fa-map-marker-alt"></i> Lamongan, East Java, Indonesia</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Rizal Efendi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
